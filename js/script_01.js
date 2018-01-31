@@ -1,10 +1,12 @@
 var camera, scene, renderer;
 var geometry, material, mesh;
 
-init();
-animate();
+function init_c3d( num ){
+    init( num );
+    animate();   
+}
 
-function init() {
+function init( num ) {
 
     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
 
@@ -14,32 +16,32 @@ function init() {
 
     var sides = [
         {
-            url: 'img/p1/face-r.jpg',
+            url: 'img/p' + num + '/px.jpg',
             position: [-512, 0, 0],
             rotation: [0, Math.PI / 2, 0]
 					},
         {
-            url: 'img/p1/face-l.jpg',
+            url: 'img/p' + num + '/nx.jpg',
             position: [512, 0, 0],
             rotation: [0, -Math.PI / 2, 0]
 					},
         {
-            url: 'img/p1/face-t.jpg',
+            url: 'img/p' + num + '/py.jpg',
             position: [0, 512, 0],
             rotation: [Math.PI / 2, 0, Math.PI]
 					},
         {
-            url: 'img/p1/face-d.jpg',
+            url: 'img/p' + num + '/ny.jpg',
             position: [0, -512, 0],
             rotation: [-Math.PI / 2, 0, Math.PI]
 					},
         {
-            url: 'img/p1/face-f.jpg',
+            url: 'img/p' + num + '/pz.jpg',
             position: [0, 0, 512],
             rotation: [0, Math.PI, 0]
 					},
         {
-            url: 'img/p1/face-b.jpg',
+            url: 'img/p' + num + '/nz.jpg',
             position: [0, 0, -512],
             rotation: [0, 0, 0]
 					}
