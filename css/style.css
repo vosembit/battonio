@@ -1,0 +1,19 @@
+body {
+    padding-top: 54px;
+/*    background-color: #999988;*/
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+@font-face {
+    font-family: Pobeda1;
+    src: url(font/Pobeda-Bold.ttf);
+}
+
+.logo {
+        font-family: Pobeda1;
+}
